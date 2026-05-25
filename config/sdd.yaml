@@ -1,0 +1,27 @@
+# LR-SFM config: Stanford Drone Dataset
+dataset: sdd
+
+L: 10
+A: 1
+obs_len: 8
+obs_input_dim: 6
+encoder_type: trajectory
+
+d_model: 128
+enc_nhead: 8
+enc_layers: 4
+decoder_blocks: 4
+decoder_nhead: 8
+
+epochs: 150
+bs: 2048
+lr: 4.0e-4
+weight_decay: 0.01
+
+ctr_init_margins: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+contrastive_weight: 0.5
+sdl_std_pull_weight: 0.10
+sdl_std_pull_scale: 2.0
+loss_reg_reduction: sum
+
+use_scene: false

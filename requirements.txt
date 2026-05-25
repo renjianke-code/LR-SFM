@@ -1,0 +1,5 @@
+# Install PyTorch (>=2.0) separately from https://pytorch.org/get-started
+# matching your CUDA version. Do NOT `pip install torch` from default PyPI.
+numpy>=1.21
+pyyaml>=5.1
+tqdm>=4.62
